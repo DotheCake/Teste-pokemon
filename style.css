@@ -1,0 +1,18 @@
+body{
+    text-align: center;
+}
+.pergunta{
+    font-family: 'Pixelify Sans';
+}
+.alternativas{
+    text-align: left;
+    width: 300px;   margin: 10px auto;
+    font-family: arial;     font-size: 20px;
+    border: 1px dashed blue;
+    padding: 10px;
+}
+.pokemon{
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+}
