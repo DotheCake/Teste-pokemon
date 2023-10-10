@@ -4,19 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <script src="app.js"></script>
+    <main>
+        <div>
+            <img src="pokemon/logo.png">
+        </div>
+    </main>
      <form action="">
-        <div class="radio">
+        <div class="pergunta">
             <p>Qual o nome do Pokemon nº 1?</p>
-            <input type="radio" id="ivysauro" name="pokemon" value="ivysauro">
-            <label for="ivysauro">Ivysauro</label><br><br>
-            <input type="radio" name="pokemon" id="Charmeleon" value="Charmeleon">
-            <label for="Charmeleon">Charmeleon</label><br><br>
-            <input type="radio" name="pokemon" id="Bulbasauro" value="Bulbasauro">
-            <label for="Bulbasauro">Bulbasauro</label>
+            <img src="pokemon/Bulbasauro1.png" width="300px">
+        </div>
+        <div class="alternativas">
+            <input type="radio" name="pokemon" value="ivysauro">
+            <label for="ivysauro">Ivysauro</label><br>
+            <input type="radio" name="pokemon" value="Charmeleon">
+            <label for="Charmeleon">Charmeleon</label><br>
+            <input type="radio" name="pokemon" id="alternativacerta" value="Bulbasauro">
+            <label for="Bulbasauro">Bulbasauro</label> <br>
+            <button type="button" onclick="VerificarResposta()">Verificar resposta</button>
         </div>
     </form>
+    <a href="pagina2.html">Proxima pergunta</a>
 </body>
 </html>

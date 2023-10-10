@@ -2,12 +2,13 @@ body{
     text-align: center;
 }
 .pergunta{
-    font-family: 'Pixelify Sans';
+    font-family:'Pixelify Sans';
+    font-size: 40px;
 }
 .alternativas{
     text-align: left;
     width: 300px;   margin: 10px auto;
-    font-family: arial;     font-size: 20px;
+    font-family: 'Pixelify Sans';     font-size: 20px;
     border: 1px dashed blue;
     padding: 10px;
 }

@@ -4,18 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <script src="app.js"></script>
     <form action="">
-        <div class="radio">
-            <p>Qual o nome do Pokemon nº 132?</p>
-            <input type="radio" id="Magikarp" name="pokemon" value="Magikarp">
-            <label for="Magikarp">Magikarp</label><br><br>
-            <input type="radio" name="pokemon" id="Eevee" value="Eevee">
-            <label for="Eevee">Eevee</label><br><br>
-            <input type="radio" name="pokemon" id="Ditto" value="Ditto">
-            <label for="Ditto">Ditto</label>
+        <div>
+            <img src="pokemon/logo.png">
         </div>
+        </main>
+        <form action="">
+            <div class="pergunta">
+                <p>Qual o nome do Pokemon nº 132?</p>
+                <img src="pokemon/ditto.png" width="300px">
+            </div>
+            <div class="alternativas">
+            <input type="radio" name="pokemon" value="Magikarp">
+            <label for="Magikarp">Magikarp</label><br>
+            <input type="radio" name="pokemon" value="Eevee">
+            <label for="Eevee">Eevee</label><br>
+            <input type="radio" name="pokemon" id="alternativacerta" value="Ditto">
+            <label for="Ditto">Ditto</label><br>
+            <button type="button" onclick="VerificarResposta()">Verificar resposta</button>
+        </div>
+    </form>
 </body>
 </html>

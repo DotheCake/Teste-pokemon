@@ -4,18 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <script src="app.js"></script>
     <form action="">
-        <div class="radio">
-            <p>Qual o nome do Pokemon nº 54?</p>
-            <input type="radio" id="Mankey" name="pokemon" value="Mankey">
-            <label for="Mankey">Mankey</label><br><br>
-            <input type="radio" name="pokemon" id="Psyduck" value="Psyduck">
-            <label for="Psyduck">Psyduck</label><br><br>
-            <input type="radio" name="pokemon" id="Diglett" value="Diglett">
-            <label for="Diglett">Diglett</label>
+        <div>
+            <img src="pokemon/logo.png">
         </div>
+        </main>
+        <form action="">
+            <div class="pergunta">
+                <p>Qual o nome do Pokemon nº 54?</p>
+                <img src="pokemon/psyduck.png" width="300px">
+            </div>
+            <div class="alternativas">
+            <input type="radio" name="pokemon" value="Mankey">
+            <label for="Mankey">Mankey</label><br>
+            <input type="radio" name="pokemon" id="alternativacerta" value="Psyduck">
+            <label for="Psyduck">Psyduck</label><br>
+            <input type="radio" name="pokemon" value="Diglett">
+            <label for="Diglett">Diglett</label><br>
+            <button type="button" onclick="VerificarResposta()">Verificar resposta</button>
+        </div>
+    </form>
+    <a href="pagina5.html">Proxima pergunta</a>
 </body>
 </html>
